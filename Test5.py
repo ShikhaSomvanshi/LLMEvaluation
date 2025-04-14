@@ -6,7 +6,7 @@ from ragas.metrics import ResponseRelevancy, FactualCorrectness
 
 from utils import load_test_data, get_llm_response
 
-os.environ["RAGAS_APP_TOKEN"] = ""
+# os.environ["RAGAS_APP_TOKEN"] = ""
 
 
 @pytest.mark.parametrize("getData",

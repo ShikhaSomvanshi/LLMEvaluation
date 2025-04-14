@@ -9,9 +9,9 @@ from ragas.testset import TestsetGenerator
 import nltk
 
 #LLM - 3 docs
-os.environ["RAGAS_APP_TOKEN"] = ""
-os.environ[
-    "OPENAI_API_KEY"] = ""
+# os.environ["RAGAS_APP_TOKEN"] = ""
+# os.environ[
+#     "OPENAI_API_KEY"] = ""
 
 nltk.data.path.append("/Users/rahulshetty/documents/nltk_data/")
 llm = ChatOpenAI(model="gpt-4", temperature=0)

@@ -17,8 +17,8 @@ from ragas.metrics import LLMContextPrecisionWithoutReference
 @pytest.mark.asyncio
 async def test_context_precision():
     # create object of class for that specific metric
-    os.environ[
-        "OPENAI_API_KEY"] = ""
+    # os.environ[
+    #     "OPENAI_API_KEY"] = ""
     #power of LLM + method metric ->score
     llm = ChatOpenAI(model="gpt-4", temperature=0)
     langchain_llm = LangchainLLMWrapper(llm)

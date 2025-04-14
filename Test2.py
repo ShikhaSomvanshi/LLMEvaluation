@@ -7,8 +7,8 @@ from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
 from ragas.metrics import LLMContextRecall
 
-os.environ[
-    "OPENAI_API_KEY"] = ""
+# os.environ[
+#     "OPENAI_API_KEY"] = ""
 @pytest.mark.asyncio
 async def test_context_recall():
 
