@@ -18,7 +18,7 @@ from ragas.metrics import LLMContextPrecisionWithoutReference
 async def test_context_precision():
     # create object of class for that specific metric
     os.environ[
-        "OPENAI_API_KEY"] = "sk-proj-G5DQugiSOIkD5FAuQTg6taa91lnRNWahjEcL3XT3BlbkFJhJE_y3YTLuYwFQR3qIcl1qsvtv7AQQ4mDmaeHeZoNe795dezsUfbOxPDn-vkCtW1qUNvU8GVkA"
+        "OPENAI_API_KEY"] = ""
     #power of LLM + method metric ->score
     llm = ChatOpenAI(model="gpt-4", temperature=0)
     langchain_llm = LangchainLLMWrapper(llm)

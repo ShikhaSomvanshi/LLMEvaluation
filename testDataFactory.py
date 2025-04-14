@@ -9,9 +9,9 @@ from ragas.testset import TestsetGenerator
 import nltk
 
 #LLM - 3 docs
-os.environ["RAGAS_APP_TOKEN"] = "apt.4036-1e80f853-bac2-a340-f4c364c0-b26e5"
+os.environ["RAGAS_APP_TOKEN"] = ""
 os.environ[
-    "OPENAI_API_KEY"] = "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"
+    "OPENAI_API_KEY"] = ""
 
 nltk.data.path.append("/Users/rahulshetty/documents/nltk_data/")
 llm = ChatOpenAI(model="gpt-4", temperature=0)
